@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo"><img src="images/logo.png"width=25% alt="" srcset=""></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="product-container">
+   <div class="product-image-section">
+  <div class="thumbnail-images">
+    <img src="images/p14a.jpg" onclick="changeImage(this)" alt="Angle 1" />
+
+  </div>
+
+  <div class="main-image">
+    <img id="mainProductImage" src="images/p14a.jpg" alt="Main Product Image" />
+  </div>
+</div>
+
+
+    <div class="product-details">
+      <h1>THE BEAR HOUSE</h1>
+      <p class="rating">⭐⭐⭐⭐☆ (4.2/5)</p>
+      <p class="price">1,799<span class="old-price">₹2,799</span> <span class="offer">(33% OFF)</span></p>
+      <p class="description">
+       
+
+</p>
+
+      <div class="size-select">
+        <p>Select Size:</p>
+        <div class="sizes">
+          <button>S</button>
+          <button>M</button>
+          <button class="active">L</button>
+          <button>XL</button>
+        </div>
+      </div>
+
+      <button class="add-to-cart">Add to Cart</button>
+
+      <div class="specs">
+        <h3>Product Specifications:</h3>
+        <ul>
+          <li>Material: Polyester Blend</li>
+          <li>Color: Blue</li>
+          <li>Fit: Regular Fit</li>
+          <li>Care: Machine wash</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+<script>
+  function changeImage(thumbnail) {
+    const mainImage = document.getElementById('mainProductImage');
+    mainImage.src = thumbnail.src;
+  }
+</script>
+
+</body>
+</html>
+<!-- You can add this script at the bottom of product.html -->
+<script>
+  const sizeButtons = document.querySelectorAll('.sizes button');
+  sizeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      sizeButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+
