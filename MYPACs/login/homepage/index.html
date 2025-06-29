@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eCommerce Layout</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+ <header class="main-header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Company Logo" />
+  </div>
+
+  <nav class="navbar">
+    <nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Products</a></li>
+    <li><a href="about.html">About Us</a></li>
+  </ul>
+</nav>
+
+    <div class="search-icons">
+      <input type="text" id="searchBar" placeholder="Search products..." />
+      <span class="icon">🔍</span>
+      <span class="icon" id="cartIcon">🛒</span>
+     <a href="login/login.html" class="product-link"><span class="icon" id="profileIcon">👤</span></a>
+    </div>
+  </nav>
+
+  <div id="userProfile" class="profile-popup">
+    <h3>User Info</h3>
+    <p>Name: John Doe</p>
+    <p>Email: john@example.com</p>
+  </div>
+</header>
+<div class="slideshow-container">
+
+    <div class="slide fade">
+      <img src="images/slide1.jpg" alt="Offer 1">
+      <div class="text">🔥 50% OFF on kids wear</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="images/slide2.jpg" alt="Offer 2">
+      <div class="text">🎉 Buy 1 Get 1 Free on Fashion</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="images/slide3.jpg" alt="Offer 3">
+      <div class="text">💥 Mega Clearance Sale - Up to 70%</div>
+    </div>
+    <div class="slide fade">
+      <img src="images/slide4.jpg" alt="Offer 1">
+      <div class="text">🔥 50% OFF on kids wear</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="images/slide5.jpg" alt="Offer 2">
+      <div class="text">🎉 Buy 1 Get 1 Free on Fashion</div>
+    </div>
+
+    <div class="slide fade">
+      <img src="images/slide6.jpg" alt="Offer 3">
+      <div class="text">💥 Mega Clearance Sale - Up to 70%</div>
+    </div>
+     <div class="slide fade">
+      <img src="images/slide7.jpg" alt="Offer 1">
+      <div class="text">🔥 50% OFF on kids wear</div>
+    </div>
+    
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+  </div>
+
+  <script src="script.js"></script>
+
+
+<!-- SLIDESHOW -->
+<!-- CATEGORY SECTION -->
+<section class="categories">
+  <a href="product details/kids/index.html" class="product-link">
+  <div class="product-card"><img src="images/kids.jpg" alt="Lehenga"><p>Kids</p></div></a>
+  <a href="product details/men/index.html " class="product-link">
+  <div class="product-card"><img src="images/men.jpg" alt="Anarkali"><p>Men</p></div></a>
+ <a href="product details/women/index.html" class="product-link">
+  <div class="product-card"><img src="images/women.jpg"alt="Anarkali"><p>Women</p></div></a>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="products">
+  <a href="product details/women/kurthi/index.html" class="product-link">
+  <div class="product-card"><img src="images/p1.jpg" alt="kurti"><p>Kurti</p></div></a>
+  <a href="product details/women/sarees/index.html" class="product-link">
+  <div class="product-card"><img src="images/p2.jpg" alt="Anarkali"><p>Sarees</p></div></a>
+ <a href="product details/women/frocks/index.html" class="product-link">
+  <div class="product-card"><img src="images/p3.jpg" alt="Frocks"><p>Frocks</p></div></a>
+ <a href="product details/women/jeans/index.html" class="product-link">
+  <div class="product-card"><img src="images/p6.jpg" alt="Sharara"><p>Jeans</p></div></a>
+ <a href="product details/women/western wear/index.html" class="product-link">
+  <div class="product-card"><img src="images/p5.jpg" alt="Frock knee length"><p>Western Wear</p></div></a>
+  <a href="product details/women/jumpsuit/index.html" class="product-link">
+  <div class="product-card"><img src="images/p4.jpg" alt="Kurti set"><p>Jumpsuit</p></div></a>
+ <a href="product details/men/sweat shirts/index.html" class="product-link">
+  <div class="product-card"><img src="images/p7.jpg" alt="Sweat shirts"><p>Sweat shirts</p></div></a>
+ <a href="product details//men/party/index.html" class="product-link">
+  <div class="product-card"><img src="images/p8.jpg" alt="Party wear"><p>Party wear</p></div></a>
+ <a href="product details/men/jeans/index.html" class="product-link">
+  <div class="product-card"><img src="images/p9.jpg" alt="Shorts"><p>Jeans</p></div></a>
+ <a href="product details/men/tshirt/index.html" class="product-link">
+  <div class="product-card"><img src="images/p10.jpg" alt="T-shirts"><p>T-shirts</p></div></a>
+ <a href="product details/men/formal shirts/index.html" class="product-link">
+  <div class="product-card"><img src="images/p11.jpg" alt="Formal shirts"><p>Formal shirts</p></div></a>
+ <a href="product details/men/jacket/index.html" class="product-link">
+  <div class="product-card"><img src="images/p12.jpg" alt="Jakets"><p>Jakets</p></div></a>
+ <a href="product details/kids/party/index.html" class="product-link">
+  <div class="product-card"><img src="images/p19.jpg" alt="Kids party wear"><p>Kids party wear</p></div></a>
+ <a href="product details/kids/sweatshirts/index.html" class="product-link">
+  <div class="product-card"><img src="images/p20.jpg" alt="Kids fashion"><p>Kids sweatshirts</p></div></a>
+ <a href="product details/kids/tshirts/index.html" class="product-link">
+  <div class="product-card"><img src="images/p21.jpg" alt="Kids T-shirts"><p>Kids T-shirts</p></div></a>
+ <a href="product details/kids/jeans/index.html" class="product-link">
+  <div class="product-card"><img src="images/p22.jpg" alt="Kids Shorts"><p>Kids Jeans</p></div></a>
+ <a href="product details/kids/night wear/index.html" class="product-link">
+  <div class="product-card"><img src="images/p23.jpg" alt="Kids night wear"><p>Kids night wear</p></div></a>
+ <a href="product details/kids/traditional/index.html" class="product-link">
+  <div class="product-card"><img src="images/p24.jpg" alt="Kids traditionals"><p>Kids traditionals</p></div></a>
+ 
+</section>
+
+<!-- ADS SECTION -->
+<section class="ads">
+  <p>Advertisment</p>
+  <img src="images/add.jpg" alt="Ads" />
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div><span>📧</span> mypacsfashionclub@gmail.com</div>
+    <div class="rating">
+      RATE US <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+    </div>
+  </div>
+  <!-- Elfsight Social Media Icons | Untitled Social Media Icons -->
+<script src="https://static.elfsight.com/platform/platform.js" nc></script>
+<div class="elfsight-app-d96978a2-09c6-4a72-a9dd-7606949698cb" ></div>
+  <p>© Copyrights 2025-40. All Rights Reserved
+    Privacy | Terms | Infringement</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
