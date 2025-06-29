@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - MyStore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar with Home Button -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="MyStore Logo" class="nav-logo">
+      </div>
+      <button onclick="window.location.href='index.html'" class="home-button"></button>
+    </div>
+  </header>
+
+  <!-- Login Form -->
+  <div class="login-container">
+    <div class="login-box">
+      <img src="logo.png" alt="MyStore Logo" class="login-logo">
+      <h2>Login to Your Account</h2>
+      <form onsubmit="redirectAfterLogin(event)">
+        <input type="text" placeholder="Email or Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
+      <!-- Elfsight Social Media Icons | Untitled Social Media Icons -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-d96978a2-09c6-4a72-a9dd-7606949698cb" data-elfsight-app-lazy></div></form>
+    </div>
+  </div>
+
+  <script>
+    function redirectAfterLogin(event) {
+      event.preventDefault();
+      // Redirect to homepage after login
+      window.location.href = "homepage/index.html"; // Update to your desired page
+    }
+  </script>
+
+</body>
+</html>
